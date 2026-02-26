@@ -35,7 +35,7 @@ mode = st.selectbox(
     ["Technical (ASTM Consultant)", "Business Strategy"]
 )
 
-if mode == "Technical (ASTM Consultant)":
+if mode == "Technical (Consultant)":
     system_prompt = "You are a senior ASTM consultant specializing in concrete floor flatness and F-number standards."
 else:
     system_prompt = "You are a strategic advisor helping grow a concrete flooring business globally."
@@ -57,3 +57,4 @@ if st.button("Submit"):
 
             st.success("Response:")
             st.write(response.choices[0].message.content)
+
