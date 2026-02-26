@@ -32,7 +32,7 @@ st.markdown("AI assistant for floor consulting and business development")
 
 mode = st.selectbox(
     "Select Mode",
-    ["Technical (ASTM Consultant)", "Business Strategy"]
+    ["Technical (Consultant)", "Business Strategy"]
 )
 
 if mode == "Technical (Consultant)":
@@ -57,4 +57,5 @@ if st.button("Submit"):
 
             st.success("Response:")
             st.write(response.choices[0].message.content)
+
 
